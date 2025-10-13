@@ -18,7 +18,7 @@ myenv\Scripts\activate
 ##### Step 3 – Install dependencies:
 
 ```sh
-cd sehrene-dss-backend
+cd smart_prescription_system_backend
 pip install -r requirements.txt
 ```
 
