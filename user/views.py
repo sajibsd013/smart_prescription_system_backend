@@ -44,7 +44,7 @@ class VerifyEmailView(APIView):
                 lifetime=datetime.timedelta(minutes=15)
             )
 
-            sent_email_to_user(user, "Your email has been verified successfully.",
+            sent_email_to_user(user.email, "Your email has been verified successfully.",
                                "Your email has been verified successfully.")
 
             return Response(

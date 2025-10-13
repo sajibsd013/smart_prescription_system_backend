@@ -26,8 +26,7 @@ class UserManager(BaseUserManager):
 
 class User(AbstractBaseUser, PermissionsMixin):
     email = models.EmailField(unique=True)
-    first_name = models.CharField(max_length=30)
-    last_name = models.CharField(max_length=30, blank=True, null=True)
+    name = models.CharField(max_length=30)
     role = models.CharField(max_length=10, choices=ROLE_CHOICES)
     phone = models.CharField(max_length=20, blank=True, null=True)
 
@@ -49,4 +48,21 @@ class User(AbstractBaseUser, PermissionsMixin):
         super().delete(*args, **kwargs)
 
     def __str__(self):
-        return self.email
+        return f"{self.name} ({self.role})"
+
+class Patient(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='patient_profile')
+    dob = models.DateField(blank=True, null=True, verbose_name="Date of Birth")
+    allergies = models.TextField(blank=True, null=True)
+    address = models.CharField(max_length=100, blank=True, null=True)
+
+    def __str__(self):
+        return f"Patient: {self.user.name}"
+
+class Doctor(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='doctor_profile')
+    reg_no = models.CharField(max_length=50, unique=True, verbose_name="Reg No")
+    specialty = models.CharField(max_length=100, blank=True, null=True)
+
+    def __str__(self):
+        return f"Dr. {self.user.name} ({self.specialty})"
