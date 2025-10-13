@@ -51,7 +51,8 @@ INSTALLED_APPS = [
 
     # Custom Apps
     'api',
-    'user'
+    'user',
+    'prescription',
 ]
 
 MIDDLEWARE = [
