@@ -67,6 +67,6 @@ Success! You can now access the project at `http://localhost:8000`.
 
 ## API Documentation
 You can find the Postman API documentation for this project at the following link:
-[SEHRENE DSS Backend API Documentation](https://documenter.getpostman.com/view/21096810/2sB3QMKULj)
+[Smart Prescription System Backend API Documentation](https://documenter.getpostman.com/view/21096810/2sB3QMKULj)
 
 ---
