@@ -6,6 +6,19 @@ STATUS_CHOICES = [
     ('revoked', 'Revoked'),
 ]
 
+MEDICATION_TYPES = [
+    ('tablet', 'Tablet'),
+    ('capsule', 'Capsule'),
+    ('syrup', 'Syrup'),
+    ('injection', 'Injection'),
+    ('ointment', 'Ointment'),
+    ('cream', 'Cream'),
+    ('drops', 'Drops'),
+    ('spray', 'Spray'),
+    ('other', 'Other'),
+]
+
+
 class Complaint(models.Model):
     text = models.CharField(max_length=255, unique=True)
 
@@ -54,10 +67,9 @@ class FollowUp(models.Model):
 class Medication(models.Model):
     brand_name = models.CharField(max_length=100)
     generic_name = models.CharField(max_length=100)
+    type = models.CharField(max_length=20, default='tablet')
     strength = models.CharField(max_length=50)
     dosage = models.CharField(max_length=100)
-    price = models.DecimalField(max_digits=10, decimal_places=2, blank=True, null=True)
-    route = models.CharField(max_length=50, blank=True, null=True)
     duration = models.CharField(max_length=50, blank=True, null=True)
 
     def __str__(self):

@@ -103,6 +103,6 @@ class FollowUpAdmin(admin.ModelAdmin):
 
 @admin.register(Medication)
 class MedicationAdmin(admin.ModelAdmin):
-    list_display = ('brand_name', 'generic_name', 'strength', 'dosage', 'price', 'route', 'duration')
+    list_display = ('brand_name', 'generic_name', 'strength', 'dosage', 'duration')
     search_fields = ('brand_name', 'generic_name')
-    list_filter = ('route',)
+    list_filter = ('generic_name',)
