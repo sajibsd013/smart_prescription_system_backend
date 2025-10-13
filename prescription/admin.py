@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import (
     Complaint, History, Examination, Diagnosis, Investigation,
-    Advice, FollowUp, Medication, Prescription
+    Advice, FollowUp, Medication, Prescription, PrescriptionVersionHistory
 )
 
 # Inline classes for showing ManyToMany relationships in Prescription admin
@@ -106,3 +106,40 @@ class MedicationAdmin(admin.ModelAdmin):
     list_display = ('brand_name', 'generic_name', 'strength', 'dosage', 'duration')
     search_fields = ('brand_name', 'generic_name')
     list_filter = ('generic_name',)
+
+
+@admin.register(PrescriptionVersionHistory)
+class PrescriptionVersionHistoryAdmin(admin.ModelAdmin):
+    list_display = (
+        'prescription_label',
+        'version_number',
+        'change_type',
+        'changed_by',
+        'changed_at'
+    )
+    list_filter = ('change_type', 'changed_at', 'object_id')
+    search_fields = ('object_id', 'changed_by__name')
+    readonly_fields = ('object_id', 'version_number', 'change_type', 'changed_by', 'changed_at', 'data')
+    ordering = ('-changed_at',)
+
+    fieldsets = (
+        (None, {
+            'fields': ('object_id', 'version_number', 'change_type', 'changed_by', 'changed_at')
+        }),
+        ('Data Snapshot', {
+            'fields': ('data',),
+        }),
+    )
+
+    def has_add_permission(self, request):
+        # Prevent manual addition from admin
+        return False
+
+    def has_delete_permission(self, request, obj=None):
+        # Optional: prevent deletion from admin
+        return False
+
+    def prescription_label(self, obj):
+        return f"Rx #{obj.object_id}"
+
+    prescription_label.short_description = 'Prescription ID'

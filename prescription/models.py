@@ -1,5 +1,7 @@
 from django.db import models
 from user.models import Patient, Doctor
+from django.contrib.auth import get_user_model
+User = get_user_model()
 
 STATUS_CHOICES = [
     ('active', 'Active'),
@@ -96,5 +98,19 @@ class Prescription(models.Model):
 
     def __str__(self):
         return f"Rx #{self.id} - {self.patient} by {self.doctor}"
+
+
+
+
+class PrescriptionVersionHistory(models.Model):
+    object_id = models.PositiveIntegerField()
+    version_number = models.PositiveIntegerField(default=1)
+    changed_by = models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL)
+    changed_at = models.DateTimeField(auto_now_add=True)
+    data = models.JSONField()
+    change_type = models.CharField(max_length=10)  # create, update, delete
+
+    class Meta:
+        ordering = ['-changed_at']
 
 
