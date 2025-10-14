@@ -1,11 +1,27 @@
 from django.contrib import admin
+from .models import Drug, Manufacturer, Generic, DosageForm
 
-from .models import MedicineDatabase
+# Register your models here.
+class DrugAdmin(admin.ModelAdmin):
+    list_display = ('brand_name', 'dosage_form', 'manufacturer')
+    search_fields = ('brand_name', 'generic__name', 'strength', 'dosage_form__description', 'manufacturer__name')
+    list_filter = ('generic', 'dosage_form', 'manufacturer')
 
-class MedicineDatabaseAdmin(admin.ModelAdmin):
-    list_display = ('brand_name', 'generic_name', 'strength', 'type', 'manufacturer')
-    search_fields = ('brand_name', 'generic_name', 'manufacturer')
-    list_filter = ('type', 'manufacturer')
-    ordering = ('brand_name',)
+class ManufacturerAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    search_fields = ('name',)
 
-admin.site.register(MedicineDatabase, MedicineDatabaseAdmin)
+class GenericAdmin(admin.ModelAdmin):
+    list_display = ('name',)
+    search_fields = ('name',)
+
+class DosageFormAdmin(admin.ModelAdmin):
+    list_display = ('description',)
+    search_fields = ('description',)
+
+admin.site.register(Drug, DrugAdmin)
+admin.site.register(Manufacturer, ManufacturerAdmin)
+admin.site.register(Generic, GenericAdmin)
+admin.site.register(DosageForm, DosageFormAdmin)
+
+
