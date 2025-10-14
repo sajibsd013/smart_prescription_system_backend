@@ -12,7 +12,7 @@ class RegisterSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ( 'email', 'name','role', 'phone', 'password', 'confirm_password')
+        fields = ( 'email', 'name', 'phone', 'password', 'confirm_password')
 
     def create(self, validated_data):
         password = validated_data.pop('password', None)
@@ -48,12 +48,12 @@ class LoginSerializer(TokenObtainPairSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'email', 'name', 'role', 'phone', 'is_active', 'is_staff', 'is_superuser', 'is_verified','last_login','created_at']
+        fields = ['id', 'email', 'name',  'phone', 'is_active', 'is_staff', 'is_superuser', 'is_verified','last_login','created_at']
         read_only_fields = ['id', 'email', 'is_active', 'is_staff', 'is_superuser', 'is_verified','last_login','created_at']
 
 
 class UserManagementSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'email', 'name', 'role', 'phone', 'is_active', 'is_staff', 'is_superuser', 'is_verified','last_login','created_at']
+        fields = ['id', 'email', 'name',  'phone', 'is_active', 'is_staff', 'is_superuser', 'is_verified','last_login','created_at']
         read_only_fields = ['id', 'email', 'is_superuser','last_login','created_at']
