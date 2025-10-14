@@ -91,12 +91,13 @@ class Prescription(models.Model):
 
 
 class PrescriptionVersionHistory(models.Model):
-    object_id = models.PositiveIntegerField()
+    prescription =  models.ForeignKey(Prescription, null=True, blank=True, on_delete=models.SET_NULL)
     version_number = models.PositiveIntegerField(default=1)
     changed_by = models.ForeignKey(User, null=True, blank=True, on_delete=models.SET_NULL)
+    ip_address = models.CharField(max_length=50, blank=True, null=True)
     changed_at = models.DateTimeField(auto_now_add=True)
-    data = models.JSONField()
-    change_type = models.CharField(max_length=10)  # create, update, delete
+    changes = models.JSONField()
+    action_type = models.CharField(max_length=10)  # create, update, delete
 
     class Meta:
         ordering = ['-changed_at']

@@ -48,23 +48,23 @@ class FollowUpAdmin(admin.ModelAdmin):
 @admin.register(PrescriptionVersionHistory)
 class PrescriptionVersionHistoryAdmin(admin.ModelAdmin):
     list_display = (
-        'prescription_label',
+        'prescription',
         'version_number',
-        'change_type',
+        'action_type',
         'changed_by',
         'changed_at'
     )
-    list_filter = ('change_type', 'changed_at', 'object_id')
-    search_fields = ('object_id', 'changed_by__name')
-    readonly_fields = ('object_id', 'version_number', 'change_type', 'changed_by', 'changed_at', 'data')
+    list_filter = ('action_type', 'changed_at', 'prescription')
+    search_fields = ('prescription', 'changed_by')
+    readonly_fields = ('prescription', 'version_number', 'action_type', 'changed_by', 'ip_address', 'changed_at')
     ordering = ('-changed_at',)
 
     fieldsets = (
         (None, {
-            'fields': ('object_id', 'version_number', 'change_type', 'changed_by', 'changed_at')
+            'fields': ('prescription', 'version_number', 'action_type', 'changed_by', 'ip_address', 'changed_at')
         }),
         ('Data Snapshot', {
-            'fields': ('data',),
+            'fields': ('changes',),
         }),
     )
 
@@ -76,7 +76,3 @@ class PrescriptionVersionHistoryAdmin(admin.ModelAdmin):
         # Optional: prevent deletion from admin
         return False
 
-    def prescription_label(self, obj):
-        return f"Rx #{obj.object_id}"
-
-    prescription_label.short_description = 'Prescription ID'

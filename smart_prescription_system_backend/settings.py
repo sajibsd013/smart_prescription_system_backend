@@ -65,6 +65,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'prescription.middleware.current_request.ThreadLocalMiddleware',
 ]
 
 ROOT_URLCONF = 'smart_prescription_system_backend.urls'

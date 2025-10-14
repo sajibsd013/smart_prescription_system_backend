@@ -3,15 +3,13 @@ from django.dispatch import receiver
 from django.forms.models import model_to_dict
 from django.contrib.auth import get_user_model
 from .models import PrescriptionVersionHistory
-
+from django.db.models import ForeignKey
+from prescription.middleware.current_request import get_current_request
 User = get_user_model()
 
 INCLUDE_MODELS = [
     "Prescription",  # your history table
 ]
-from django.forms.models import model_to_dict
-from django.db.models import ForeignKey, ManyToManyField
-
 
 def serialize_instance(instance):
     """
@@ -33,26 +31,45 @@ def serialize_instance(instance):
 
     return data
 
+def get_client_ip(request):
+    x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
+    if x_forwarded_for:
+        ip = x_forwarded_for.split(',')[0]
+    else:
+        ip = request.META.get('REMOTE_ADDR')
+    return ip
+
+def get_user_and_ip():
+    request = get_current_request()
+    user = getattr(request, 'user', None) if request else None
+    ip_address = get_client_ip(request) if request else None
+    return user, ip_address
 
 @receiver(post_save)
 def save_version(sender, instance, created, **kwargs):
-    print(sender.__name__)
+
+    print(instance.id)
+
     if sender.__name__ not in INCLUDE_MODELS:
         return
+
+    user, ip_address = get_user_and_ip()
 
     data = serialize_instance(instance)
 
     last_version = PrescriptionVersionHistory.objects.filter(
-        object_id=instance.pk
+        prescription=instance
     ).order_by('-version_number').first()
 
     new_version_number = (last_version.version_number + 1) if last_version else 1
 
     PrescriptionVersionHistory.objects.create(
-        object_id=instance.pk,
+        prescription=instance,
         version_number=new_version_number,
-        change_type='create' if created else 'update',
-        data=data
+        action_type='create' if created else 'update',
+        changes=data,
+        changed_by = user,
+        ip_address = ip_address
     )
 
 
@@ -61,17 +78,20 @@ def delete_version(sender, instance, **kwargs):
     if sender.__name__ not in INCLUDE_MODELS:
         return
 
+    user, ip_address = get_user_and_ip()
     data = serialize_instance(instance)
 
     last_version = PrescriptionVersionHistory.objects.filter(
-        object_id=instance.pk
+        prescription=instance.pk
     ).order_by('-version_number').first()
 
     new_version_number = (last_version.version_number + 1) if last_version else 1
 
     PrescriptionVersionHistory.objects.create(
-        object_id=instance.pk,
+        prescription=instance.pk,
         version_number=new_version_number,
-        change_type='delete',
-        data=data
+        action_type='delete',
+        changes=data,
+        changed_by=user,
+        ip_address=ip_address
     )
