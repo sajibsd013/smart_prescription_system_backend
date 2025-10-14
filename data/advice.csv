@@ -1,0 +1,201 @@
+id,text
+1,Take medication exactly as prescribed by the doctor.
+2,ডাক্তারের পরামর্শ অনুযায়ী সঠিক নিয়মে ঔষধ সেবন করুন।
+3,"Complete the full course of antibiotics, even if you feel better."
+4,ভালো বোধ করলেও অ্যান্টিবায়োটিকের সম্পূর্ণ কোর্স শেষ করুন।
+5,Do not share your medication with others.
+6,আপনার ঔষধ অন্যের সাথে শেয়ার করবেন না।
+7,Report any side effects or allergic reactions immediately.
+8,যেকোনো পার্শ্বপ্রতিক্রিয়া বা অ্যালার্জি হলে অবিলম্বে ডাক্তারকে জানান।
+9,Attend all follow-up appointments as scheduled.
+10,নির্ধারিত সময়ে সব ফলো-আপ অ্যাপয়েন্টমেন্টে উপস্থিত থাকুন।
+11,Get at least 7-8 hours of quality sleep per night.
+12,প্রতি রাতে অন্তত ৭-৮ ঘণ্টা ভালোভাবে ঘুমান।
+13,"Maintain a consistent sleep schedule, even on weekends."
+14,সপ্তাহের ছুটির দিনেও একটি নির্দিষ্ট ঘুমের সময়সূচী বজায় রাখুন।
+15,Create a relaxing bedtime routine to help you wind down.
+16,ঘুমানোর আগে মনকে শান্ত করার জন্য একটি আরামদায়ক রুটিন তৈরি করুন।
+17,Avoid caffeine and heavy meals close to bedtime.
+18,ঘুমানোর কিছুক্ষণ আগে ক্যাফেইন এবং ভারী খাবার এড়িয়ে চলুন।
+19,"Ensure your bedroom is dark, quiet, and cool."
+20,"আপনার শোবার ঘরটি অন্ধকার, শান্ত এবং শীতল রাখুন।"
+21,Drink at least 8-10 glasses of water daily.
+22,প্রতিদিন অন্তত ৮-১০ গ্লাস জল পান করুন।
+23,"Eat a balanced diet rich in fruits, vegetables, and whole grains."
+24,"ফল, শাকসবজি এবং শস্য সমৃদ্ধ একটি সুষম খাদ্য গ্রহণ করুন।"
+25,"Reduce your intake of salt, sugar, and processed foods."
+26,"আপনার লবণ, চিনি এবং প্রক্রিয়াজাত খাবারের গ্রহণ কমান।"
+27,Limit consumption of red meat and fatty foods.
+28,লাল মাংস এবং চর্বিযুক্ত খাবার খাওয়া সীমিত করুন।
+29,Incorporate lean proteins like fish and chicken into your diet.
+30,আপনার খাদ্যে মাছ এবং মুরগির মতো চর্বিহীন প্রোটিন অন্তর্ভুক্ত করুন।
+31,"Avoid skipping meals, especially breakfast."
+32,"খাবার বাদ দেওয়া থেকে বিরত থাকুন, বিশেষ করে সকালের নাস্তা।"
+33,Read food labels to make informed choices.
+34,সঠিক খাবার বেছে নেওয়ার জন্য খাবারের লেবেল পড়ুন।
+35,Practice portion control to maintain a healthy weight.
+36,স্বাস্থ্যকর ওজন বজায় রাখতে খাবারের পরিমাণ নিয়ন্ত্রণ করুন।
+37,Increase your fiber intake to improve digestion.
+38,হজমশক্তি উন্নত করতে আপনার ফাইবার গ্রহণ বাড়ান।
+39,Avoid foods you are allergic or intolerant to.
+40,যেসব খাবারে আপনার অ্যালার্জি বা অসহিষ্ণুতা আছে তা এড়িয়ে চলুন।
+41,Engage in at least 30 minutes of moderate-intensity exercise most days of the week.
+42,সপ্তাহের বেশিরভাগ দিন অন্তত ৩০ মিনিট মাঝারি তীব্রতার ব্যায়াম করুন।
+43,Incorporate strength training exercises 2-3 times per week.
+44,সপ্তাহে ২-৩ বার শক্তি প্রশিক্ষণের ব্যায়াম অন্তর্ভুক্ত করুন।
+45,Choose an activity you enjoy to stay motivated.
+46,অনুপ্রাণিত থাকার জন্য আপনার পছন্দের একটি কার্যকলাপ বেছে নিন।
+47,Always warm up before exercising and cool down afterward.
+48,ব্যায়ামের আগে সর্বদা ওয়ার্ম-আপ করুন এবং পরে কুল-ডাউন করুন।
+49,Listen to your body and avoid overexertion.
+50,আপনার শরীরের কথা শুনুন এবং অতিরিক্ত পরিশ্রম এড়িয়ে চলুন।
+51,Maintain a healthy body weight.
+52,একটি স্বাস্থ্যকর ওজন বজায় রাখুন।
+53,"If you smoke, quit immediately."
+54,"আপনি যদি ধূমপান করেন, অবিলম্বে ছেড়ে দিন।"
+55,Avoid exposure to secondhand smoke.
+56,পরোক্ষ ধূমপানের সংস্পর্শ এড়িয়ে চলুন।
+57,Limit alcohol consumption to moderate levels.
+58,অ্যালকোহল গ্রহণ পরিমিত পর্যায়ে সীমাবদ্ধ রাখুন।
+59,Avoid using illicit drugs.
+60,অবৈধ মাদক ব্যবহার করা থেকে বিরত থাকুন।
+61,"Practice stress-management techniques like meditation, yoga, or deep breathing."
+62,"ধ্যান, যোগব্যায়াম বা গভীর শ্বাসের মতো মানসিক চাপ কমানোর কৌশল অনুশীলন করুন।"
+63,Make time for hobbies and activities you enjoy.
+64,আপনার পছন্দের শখ এবং কার্যকলাপের জন্য সময় বের করুন।
+65,Wash your hands frequently with soap and water.
+66,সাবান ও জল দিয়ে ঘন ঘন হাত ধৌত করুন।
+67,"Avoid touching your face, especially your eyes, nose, and mouth."
+68,"আপনার মুখ স্পর্শ করা থেকে বিরত থাকুন, বিশেষ করে চোখ, নাক এবং মুখ।"
+69,Cover your mouth and nose when coughing or sneezing.
+70,কাশি বা হাঁচি দেওয়ার সময় আপনার মুখ এবং নাক ঢাকুন।
+71,Avoid close contact with people who are sick.
+72,অসুস্থ ব্যক্তিদের সাথে ঘনিষ্ঠ যোগাযোগ এড়িয়ে চলুন।
+73,Keep your immunizations up to date.
+74,আপনার টিকাগুলো আপ-টু-ডেট রাখুন।
+75,Practice safe sex to prevent STIs.
+76,এসটিআই প্রতিরোধের জন্য নিরাপদ যৌন অভ্যাস করুন।
+77,Wear sunscreen and protective clothing when outdoors.
+78,বাইরে থাকাকালীন সানস্ক্রিন এবং সুরক্ষামূলক পোশাক পরুন।
+79,"Perform regular self-examinations (e.g., breast, skin)."
+80,"নিয়মিত স্ব-পরীক্ষা করুন (যেমন, স্তন, ত্বক)।"
+81,Rest when you feel tired or unwell.
+82,ক্লান্ত বা অসুস্থ বোধ করলে বিশ্রাম নিন।
+83,Avoid strenuous activities while recovering from illness.
+84,অসুস্থতা থেকে সেরে ওঠার সময় কঠোর কার্যকলাপ এড়িয়ে চলুন।
+85,Gradually return to your normal routine after being sick.
+86,অসুস্থতার পর ধীরে ধীরে আপনার স্বাভাবিক রুটিনে ফিরে আসুন।
+87,Elevate injured limbs to reduce swelling.
+88,ফোলা কমাতে আহত অঙ্গপ্রত্যঙ্গ উঁচু করে রাখুন।
+89,Apply ice packs to acute injuries for 15-20 minutes at a time.
+90,তীব্র আঘাতের জায়গায় একবারে ১৫-২০ মিনিটের জন্য আইস প্যাক লাগান।
+91,Use heat packs for chronic muscle soreness.
+92,দীর্ঘস্থায়ী পেশী ব্যথার জন্য হিট প্যাক ব্যবহার করুন।
+93,Do not operate heavy machinery if you are taking medication that causes drowsiness.
+94,যদি আপনি তন্দ্রা সৃষ্টিকারী ঔষধ গ্রহণ করেন তবে ভারী যন্ত্রপাতি চালাবেন না।
+95,Check your blood pressure regularly if you have hypertension.
+96,উচ্চ রক্তচাপ থাকলে নিয়মিত আপনার রক্তচাপ পরীক্ষা করুন।
+97,Monitor your blood sugar levels as advised if you are diabetic.
+98,ডায়াবেটিস থাকলে পরামর্শ অনুযায়ী আপনার রক্তে শর্করার মাত্রা নিরীক্ষণ করুন।
+99,Keep a log of your symptoms to discuss with your doctor.
+100,আপনার ডাক্তারের সাথে আলোচনা করার জন্য আপনার লক্ষণগুলোর একটি লগ রাখুন।
+101,Do not ignore new or worsening symptoms.
+102,নতুন বা ক্রমবর্ধমান লক্ষণ উপেক্ষা করবেন না।
+103,Seek immediate medical attention for severe symptoms like chest pain or difficulty breathing.
+104,বুকব্যথা বা শ্বাসকষ্টের মতো গুরুতর লক্ষণের জন্য অবিলম্বে চিকিৎসকের সহায়তা নিন।
+105,Maintain good posture to prevent back pain.
+106,পিঠের ব্যথা প্রতিরোধের জন্য সঠিক অঙ্গবিন্যাস বজায় রাখুন।
+107,Take regular breaks if you have a sedentary job.
+108,যদি আপনার বসে কাজ করার অভ্যাস থাকে তবে নিয়মিত বিরতি নিন।
+109,Limit screen time and take breaks to avoid eye strain.
+110,চোখের চাপ এড়াতে স্ক্রিন টাইম সীমিত করুন এবং বিরতি নিন।
+111,Brush and floss your teeth daily to maintain oral hygiene.
+112,মুখের স্বাস্থ্যবিধি বজায় রাখতে প্রতিদিন দাঁত ব্রাশ করুন এবং ফ্লস করুন।
+113,Wear appropriate safety gear during sports and other activities.
+114,খেলাধুলা এবং অন্যান্য কার্যকলাপের সময় উপযুক্ত সুরক্ষা গিয়ার পরুন।
+115,Ensure your living space is free from fall hazards.
+116,আপনার থাকার জায়গা যেন পতনের ঝুঁকি থেকে মুক্ত থাকে তা নিশ্চিত করুন।
+117,Avoid driving if you are feeling dizzy or unwell.
+118,মাথা ঘোরা বা অসুস্থ বোধ করলে গাড়ি চালানো এড়িয়ে চলুন।
+119,Stay informed about your medical condition.
+120,আপনার শারীরিক অবস্থা সম্পর্কে অবগত থাকুন।
+121,Take your iron supplements with a source of Vitamin C to increase absorption.
+122,আয়রন শোষণের মাত্রা বাড়াতে ভিটামিন সি যুক্ত খাবারের সাথে আয়রন সম্পূরক গ্রহণ করুন।
+123,"If you have asthma, always carry your rescue inhaler with you."
+124,"আপনার যদি হাঁপানি থাকে, তবে সর্বদা আপনার রেসকিউ ইনহেলার সাথে রাখুন।"
+125,Avoid known triggers for your allergies or asthma.
+126,আপনার অ্যালার্জি বা হাঁপানির পরিচিত কারণগুলো এড়িয়ে চলুন।
+127,Use a humidifier to ease congestion from a cold.
+128,সর্দি থেকে মুক্তি পেতে একটি হিউমিডিফায়ার ব্যবহার করুন।
+129,Gargle with salt water to soothe a sore throat.
+130,গলা ব্যথা উপশম করতে লবণ জল দিয়ে গার্গল করুন।
+131,"For minor burns, run cool water over the area for several minutes."
+132,"ছোটখাটো পোড়ার জন্য, কয়েক মিনিটের জন্য ঠান্ডা জল দিয়ে জায়গাটি ধুয়ে ফেলুন।"
+133,Keep wounds clean and covered with a sterile bandage.
+134,ক্ষতস্থান পরিষ্কার রাখুন এবং একটি জীবাণুমুক্ত ব্যান্ডেজ দিয়ে ঢেকে রাখুন।
+135,Do not pick at scabs or skin lesions.
+136,ক্ষতের উপরের চামড়া বা ত্বকের ক্ষত খুঁটবেন না।
+137,"Moisturize your skin daily, especially if it's dry."
+138,"প্রতিদিন আপনার ত্বককে ময়েশ্চারাইজ করুন, বিশেষ করে যদি এটি শুষ্ক থাকে।"
+139,"If you have acid reflux, avoid lying down for 2-3 hours after eating."
+140,"আপনার যদি অ্যাসিড রিফ্লাক্স হয়, তবে খাওয়ার পর ২-৩ ঘণ্টা শুয়ে থাকা এড়িয়ে চলুন।"
+141,Chew your food slowly and thoroughly.
+142,আপনার খাবার ধীরে ধীরে এবং ভালোভাবে চিবিয়ে খান।
+143,Incorporate probiotics into your diet for gut health.
+144,পেটের স্বাস্থ্যের জন্য আপনার খাদ্যে প্রোবায়োটিক অন্তর্ভুক্ত করুন।
+145,"If you have joint pain, low-impact exercises like swimming can be beneficial."
+146,"আপনার যদি জয়েন্টে ব্যথা হয়, তবে সাঁতারের মতো কম-প্রভাবের ব্যায়াম উপকারী হতে পারে।"
+147,Stretch regularly to maintain flexibility and reduce stiffness.
+148,নমনীয়তা বজায় রাখতে এবং শক্তভাব কমাতে নিয়মিত স্ট্রেচ করুন।
+149,Don't lift heavy objects with your back; use your legs.
+150,"ভারী জিনিস তোলার সময় পিঠ দিয়ে নয়, পা দিয়ে তুলুন।"
+151,"If you feel anxious or depressed, talk to someone you trust or a professional."
+152,"আপনি যদি উদ্বিগ্ন বা বিষণ্ণ বোধ করেন, তবে আপনার বিশ্বাসভাজন কারো সাথে বা একজন পেশাদারের সাথে কথা বলুন।"
+153,Limit your exposure to news and social media if it causes stress.
+154,মানসিক চাপ সৃষ্টি করলে খবর এবং সোশ্যাল মিডিয়া থেকে আপনার সংস্পর্শ সীমিত করুন।
+155,Practice mindfulness and stay present in the moment.
+156,মননশীলতা অনুশীলন করুন এবং বর্তমান মুহূর্তে থাকুন।
+157,Set realistic goals for yourself to avoid feeling overwhelmed.
+158,অতিরিক্ত চাপ এড়াতে নিজের জন্য বাস্তবসম্মত লক্ষ্য নির্ধারণ করুন।
+159,Celebrate small achievements to stay positive.
+160,ইতিবাচক থাকার জন্য ছোট ছোট অর্জনগুলো উদযাপন করুন।
+161,"If you are pregnant, attend all prenatal check-ups."
+162,"আপনি যদি গর্ভবতী হন, তবে সমস্ত প্রসবপূর্ব চেক-আপে অংশ নিন।"
+163,Take prenatal vitamins as recommended by your doctor.
+164,আপনার ডাক্তারের পরামর্শ অনুযায়ী প্রসবপূর্ব ভিটামিন গ্রহণ করুন।
+165,Avoid raw or undercooked foods during pregnancy.
+166,গর্ভাবস্থায় কাঁচা বা কম রান্না করা খাবার এড়িয়ে চলুন।
+167,Do not consume alcohol or smoke during pregnancy.
+168,গর্ভাবস্থায় অ্যালকোহল বা ধূমপান করবেন না।
+169,"For children, ensure they receive all recommended vaccinations on schedule."
+170,"শিশুদের জন্য, নিশ্চিত করুন যে তারা সময়সূচী অনুযায়ী সমস্ত প্রস্তাবিত টিকা পেয়েছে।"
+171,Childproof your home to prevent accidents.
+172,দুর্ঘটনা প্রতিরোধের জন্য আপনার বাড়ি শিশুবান্ধব করুন।
+173,Supervise young children near water.
+174,ছোট শিশুদের জলের কাছে তত্ত্বাবধান করুন।
+175,Ensure children wear helmets when biking or skating.
+176,নিশ্চিত করুন যে শিশুরা বাইক চালানো বা স্কেটিং করার সময় হেলমেট পরে।
+177,Limit sugary drinks and snacks for children.
+178,শিশুদের জন্য চিনিযুক্ত পানীয় এবং স্ন্যাকস সীমিত করুন।
+179,Encourage active play for children every day.
+180,প্রতিদিন শিশুদের সক্রিয় খেলাধুলায় উৎসাহিত করুন।
+181,"If you have a fever, stay hydrated and rest."
+182,"আপনার যদি জ্বর হয়, তবে হাইড্রেটেড থাকুন এবং বিশ্রাম নিন।"
+183,"Use over-the-counter pain relievers for fever and aches, as directed."
+184,জ্বর এবং ব্যথার জন্য নির্দেশ অনুযায়ী ওভার-দ্য-কাউন্টার ব্যথা উপশমকারী ব্যবহার করুন।
+185,Clean and disinfect frequently touched surfaces to prevent the spread of germs.
+186,জীবাণুর বিস্তার রোধ করতে প্রায়শই স্পর্শ করা পৃষ্ঠগুলো পরিষ্কার এবং জীবাণুমুক্ত করুন।
+187,"If you have diarrhea, drink plenty of fluids to prevent dehydration."
+188,"আপনার যদি ডায়রিয়া হয়, তবে ডিহাইড্রেশন প্রতিরোধের জন্য প্রচুর পরিমাণে তরল পান করুন।"
+189,"Follow the BRAT diet (bananas, rice, applesauce, toast) for diarrhea."
+190,"ডায়রিয়ার জন্য ব্র্যাট ডায়েট (কলা, ভাত, আপেলসস, টোস্ট) অনুসরণ করুন।"
+191,"If you are constipated, increase your intake of water and fiber-rich foods."
+192,"আপনার যদি কোষ্ঠকাঠিন্য হয়, তবে জল এবং ফাইবার সমৃদ্ধ খাবারের গ্রহণ বাড়ান।"
+193,"For a minor cut, apply direct pressure with a clean cloth."
+194,"একটি ছোটখাটো কাটার জন্য, একটি পরিষ্কার কাপড় দিয়ে সরাসরি চাপ প্রয়োগ করুন।"
+195,Seek medical care for deep cuts or those that don't stop bleeding.
+196,গভীর কাটা বা যে কাটা থেকে রক্তপাত বন্ধ হয় না তার জন্য চিকিৎসকের সহায়তা নিন।
+197,"If you have diabetes, inspect your feet daily for any sores or changes."
+198,"আপনার যদি ডায়াবেটিস থাকে, তবে কোনো ক্ষত বা পরিবর্তনের জন্য প্রতিদিন আপনার পা পরিদর্শন করুন।"
+199,Know the signs of a heart attack and stroke and act quickly.
+200,হার্ট অ্যাটাক এবং স্ট্রোকের লক্ষণগুলো জানুন এবং দ্রুত ব্যবস্থা নিন।

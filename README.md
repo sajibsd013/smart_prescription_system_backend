@@ -22,10 +22,12 @@ cd smart_prescription_system_backend
 pip install -r requirements.txt
 ```
 
-##### Step 4 – Create a database:
+##### Step 4 – Create a database & seed data:
 
 ```sh
+python manage.py makemigrations
 python manage.py migrate
+python manage.py seed_data
 ```
 
 ##### Step 5 – Create an admin username and password:

@@ -1,0 +1,774 @@
+id,text
+1,Complete Blood Count (CBC)
+2,White Blood Cell Count (WBC)
+3,Red Blood Cell Count (RBC)
+4,Hemoglobin (Hgb)
+5,Hematocrit (Hct)
+6,Mean Corpuscular Volume (MCV)
+7,Mean Corpuscular Hemoglobin (MCH)
+8,Mean Corpuscular Hemoglobin Concentration (MCHC)
+9,Red Cell Distribution Width (RDW)
+10,Platelet Count
+11,Mean Platelet Volume (MPV)
+12,White Blood Cell Differential
+13,Neutrophils
+14,Lymphocytes
+15,Monocytes
+16,Eosinophils
+17,Basophils
+18,Comprehensive Metabolic Panel (CMP)
+19,Basic Metabolic Panel (BMP)
+20,Glucose (Blood Sugar)
+21,Fasting Blood Sugar (FBS)
+22,2-hour Postprandial Blood Sugar (2hPPBS)
+23,Oral Glucose Tolerance Test (OGTT)
+24,Glycated Hemoglobin (HbA1c)
+25,Sodium
+26,Potassium
+27,Chloride
+28,Bicarbonate (CO2)
+29,Blood Urea Nitrogen (BUN)
+30,Creatinine
+31,BUN/Creatinine Ratio
+32,Estimated Glomerular Filtration Rate (eGFR)
+33,Calcium
+34,Total Protein
+35,Albumin
+36,Globulin
+37,Albumin/Globulin Ratio
+38,Alkaline Phosphatase (ALP)
+39,Alanine Aminotransferase (ALT/SGPT)
+40,Aspartate Aminotransferase (AST/SGOT)
+41,Bilirubin (Total)
+42,Bilirubin (Direct)
+43,Bilirubin (Indirect)
+44,Lipid Profile
+45,Total Cholesterol
+46,Triglycerides
+47,High-Density Lipoprotein (HDL) Cholesterol
+48,Low-Density Lipoprotein (LDL) Cholesterol
+49,Very Low-Density Lipoprotein (VLDL) Cholesterol
+50,Cholesterol/HDL Ratio
+51,Kidney Function Test (KFT/RFT)
+52,Liver Function Test (LFT)
+53,Thyroid Function Test (TFT)
+54,Thyroid Stimulating Hormone (TSH)
+55,Free Thyroxine (Free T4)
+56,Total Thyroxine (Total T4)
+57,Free Triiodothyronine (Free T3)
+58,Total Triiodothyronine (Total T3)
+59,Reverse T3
+60,Thyroglobulin Antibodies
+61,Thyroid Peroxidase Antibodies (TPO)
+62,Urinalysis (Urine Routine Examination)
+63,Urine pH
+64,Urine Specific Gravity
+65,Urine Glucose
+66,Urine Ketones
+67,Urine Protein
+68,Urine Bilirubin
+69,Urine Urobilinogen
+70,Urine Blood (Hemoglobin)
+71,Urine Nitrite
+72,Urine Leukocyte Esterase
+73,Urine Microscopy (RBCs)
+74,Urine Microscopy (WBCs)
+75,Urine Microscopy (Epithelial Cells)
+76,Urine Microscopy (Casts)
+77,Urine Microscopy (Crystals)
+78,Urine Microscopy (Bacteria)
+79,Urine Culture and Sensitivity
+80,24-Hour Urine Protein
+81,Urine Microalbumin
+82,Urine Albumin-to-Creatinine Ratio (ACR)
+83,Prothrombin Time (PT)
+84,International Normalized Ratio (INR)
+85,Activated Partial Thromboplastin Time (aPTT)
+86,Fibrinogen
+87,D-dimer
+88,Erythrocyte Sedimentation Rate (ESR)
+89,"C-Reactive Protein (CRP), High-Sensitivity (hs-CRP)"
+90,Uric Acid
+91,Magnesium
+92,Phosphate
+93,Lactate Dehydrogenase (LDH)
+94,Creatine Kinase (CK/CPK)
+95,Creatine Kinase-MB (CK-MB)
+96,Troponin I
+97,Troponin T
+98,Brain Natriuretic Peptide (BNP)
+99,N-terminal pro-BNP (NT-proBNP)
+100,Amylase
+101,Lipase
+102,Iron
+103,Total Iron Binding Capacity (TIBC)
+104,Transferrin Saturation
+105,Ferritin
+106,Vitamin B12
+107,Folate (Folic Acid)
+108,"Vitamin D, 25-Hydroxy"
+109,Parathyroid Hormone (PTH)
+110,Cortisol (AM/PM)
+111,Adrenocorticotropic Hormone (ACTH)
+112,Aldosterone
+113,Renin
+114,Testosterone (Total)
+115,Testosterone (Free)
+116,Luteinizing Hormone (LH)
+117,Follicle-Stimulating Hormone (FSH)
+118,Estradiol
+119,Progesterone
+120,Prolactin
+121,Human Growth Hormone (HGH)
+122,Insulin-like Growth Factor 1 (IGF-1)
+123,Insulin
+124,C-Peptide
+125,Blood Grouping and Rh Typing
+126,Direct Coombs Test
+127,Indirect Coombs Test
+128,Reticulocyte Count
+129,Hemoglobin Electrophoresis
+130,Glucose-6-Phosphate Dehydrogenase (G6PD)
+131,"Hepatitis A Antibody (IgM, IgG)"
+132,Hepatitis B Surface Antigen (HBsAg)
+133,Hepatitis B Surface Antibody (anti-HBs)
+134,Hepatitis B Core Antibody (anti-HBc)
+135,Hepatitis B e-Antigen (HBeAg)
+136,Hepatitis B e-Antibody (anti-HBe)
+137,Hepatitis B DNA (Viral Load)
+138,Hepatitis C Antibody (anti-HCV)
+139,Hepatitis C RNA (Viral Load)
+140,HIV-1/2 Antibody and p24 Antigen Test
+141,HIV RNA (Viral Load)
+142,CD4 Lymphocyte Count
+143,VDRL (Veneral Disease Research Laboratory)
+144,RPR (Rapid Plasma Reagin)
+145,TP-PA (Treponema pallidum Particle Agglutination)
+146,"Herpes Simplex Virus (HSV) 1/2 IgG, IgM"
+147,"Varicella-Zoster Virus (VZV) IgG, IgM"
+148,"Cytomegalovirus (CMV) IgG, IgM"
+149,Epstein-Barr Virus (EBV) Panel
+150,"Rubella IgG, IgM"
+151,"Toxoplasma IgG, IgM"
+152,Lyme Disease Serology
+153,Stool Routine Examination
+154,Stool for Ova and Parasites
+155,Stool for Occult Blood (FOBT/FIT)
+156,Stool Culture and Sensitivity
+157,Stool for Clostridium difficile Toxin
+158,Stool for Helicobacter pylori Antigen
+159,Sputum Gram Stain
+160,Sputum Culture and Sensitivity
+161,Sputum for Acid-Fast Bacilli (AFB) Smear
+162,Sputum for AFB Culture
+163,Tuberculin Skin Test (Mantoux/PPD)
+164,Interferon-Gamma Release Assay (IGRA)
+165,GeneXpert for TB (MTB/RIF)
+166,Throat Swab/Strep Test (Rapid)
+167,Throat Culture
+168,Nasal Swab for Influenza A/B
+169,Nasal Swab for RSV
+170,COVID-19 PCR Test
+171,COVID-19 Rapid Antigen Test
+172,Blood Culture
+173,Cerebrospinal Fluid (CSF) Analysis
+174,CSF Glucose
+175,CSF Protein
+176,CSF Cell Count and Differential
+177,CSF Gram Stain and Culture
+178,Pleural Fluid Analysis
+179,Peritoneal Fluid (Ascites) Analysis
+180,Synovial Fluid (Joint) Analysis
+181,Semen Analysis
+182,Pap Smear (Papanicolaou Test)
+183,Human Papillomavirus (HPV) Test
+184,Vaginal Wet Mount
+185,KOH Prep
+186,Chlamydia/Gonorrhea Nucleic Acid Amplification Test (NAAT)
+187,"Prostate-Specific Antigen (PSA), Total"
+188,"Prostate-Specific Antigen (PSA), Free"
+189,Carcinoembryonic Antigen (CEA)
+190,Alpha-Fetoprotein (AFP)
+191,CA-125 (Cancer Antigen 125)
+192,CA 19-9 (Cancer Antigen 19-9)
+193,CA 15-3 (Cancer Antigen 15-3)
+194,"Human Chorionic Gonadotropin (hCG), Serum Qualitative"
+195,"Human Chorionic Gonadotropin (hCG), Serum Quantitative"
+196,"Human Chorionic Gonadotropin (hCG), Urine"
+197,Antinuclear Antibody (ANA)
+198,Rheumatoid Factor (RF)
+199,Anti-Cyclic Citrullinated Peptide (anti-CCP)
+200,Anti-dsDNA Antibody
+201,Extractable Nuclear Antigen (ENA) Panel
+202,Anti-Smith (Anti-Sm) Antibody
+203,Anti-RNP Antibody
+204,Anti-Ro (SSA) Antibody
+205,Anti-La (SSB) Antibody
+206,Anti-Scl-70 Antibody
+207,Anti-Jo-1 Antibody
+208,Antineutrophil Cytoplasmic Antibodies (ANCA)
+209,Complement C3
+210,Complement C4
+211,Total Complement (CH50)
+212,"Immunoglobulins (IgG, IgA, IgM)"
+213,Serum Protein Electrophoresis (SPEP)
+214,Urine Protein Electrophoresis (UPEP)
+215,Immunofixation Electrophoresis
+216,Serum Free Light Chains
+217,Cryoglobulins
+218,Cold Agglutinins
+219,Lactate (Lactic Acid)
+220,Ammonia
+221,Homocysteine
+222,Lipoprotein (a)
+223,Apolipoprotein A1
+224,Apolipoprotein B
+225,Ceruloplasmin
+226,Alpha-1 Antitrypsin
+227,ACE (Angiotensin-Converting Enzyme) Level
+228,Erythropoietin
+229,Drug Screen (Urine)
+230,Blood Alcohol Level
+231,"Therapeutic Drug Monitoring (e.g., Digoxin, Lithium)"
+232,Heavy Metal Screen
+233,Lead Level
+234,Mercury Level
+235,Arsenic Level
+236,Carboxyhemoglobin
+237,Methemoglobin
+238,Allergy Testing (Skin Prick)
+239,Allergy Testing (Specific IgE Blood Test/RAST)
+240,Patch Testing
+241,Karyotyping (Chromosome Analysis)
+242,BRCA1/BRCA2 Gene Mutation Test
+243,HLA-B27 Antigen
+244,Factor V Leiden Mutation
+245,Prothrombin Gene Mutation
+246,MTHFR Gene Mutation
+247,Genetic testing for Cystic Fibrosis
+248,Genetic testing for Huntington's Disease
+249,Fine Needle Aspiration Cytology (FNAC)
+250,"Biopsy (e.g., skin, liver, kidney)"
+251,Bone Marrow Aspiration and Biopsy
+252,Lumbar Puncture (Spinal Tap)
+253,Paracentesis
+254,Thoracentesis
+255,Arthrocentesis
+256,Electrocardiogram (ECG/EKG)
+257,Holter Monitor (24-48 hour ECG)
+258,Event Monitor
+259,Exercise Stress Test (Treadmill Test/TMT)
+260,Echocardiogram (Transthoracic)
+261,Transesophageal Echocardiogram (TEE)
+262,Stress Echocardiogram
+263,Spirometry (Pulmonary Function Test)
+264,Lung Volume Measurement
+265,Diffusing Capacity (DLCO)
+266,Bronchial Provocation Test
+267,Arterial Blood Gas (ABG)
+268,Pulse Oximetry
+269,Chest X-ray (CXR) (PA and Lateral views)
+270,Abdominal X-ray (KUB)
+271,"Spine X-ray (Cervical, Thoracic, Lumbar)"
+272,"Extremity X-ray (Hand, Foot, etc.)"
+273,Skull X-ray
+274,Dental X-ray (Orthopantomogram/OPG)
+275,Mammogram
+276,Bone Density Scan (DEXA/DXA)
+277,Ultrasound of Whole Abdomen
+278,Ultrasound of Upper Abdomen
+279,"Ultrasound of Kidneys, Ureters, Bladder (KUB)"
+280,"Ultrasound of Pelvis (Transabdominal, Transvaginal)"
+281,Obstetric Ultrasound (Fetal Anomaly Scan)
+282,Thyroid Ultrasound
+283,Breast Ultrasound
+284,Scrotal Ultrasound
+285,"Doppler Ultrasound (Carotid, Venous, Arterial)"
+286,Echocardiogram (as an ultrasound)
+287,Fetal Echocardiogram
+288,Transrectal Ultrasound (TRUS)
+289,Endoscopic Ultrasound
+290,Computed Tomography (CT) of Head/Brain
+291,Computed Tomography (CT) of Neck
+292,Computed Tomography (CT) of Chest
+293,High-Resolution CT (HRCT) of Chest
+294,Computed Tomography (CT) of Abdomen and Pelvis
+295,CT Urogram
+296,CT Enterography
+297,CT Colonography (Virtual Colonoscopy)
+298,"CT Angiography (CTA) (e.g., Coronary, Pulmonary)"
+299,CT Perfusion
+300,CT-guided Biopsy
+301,Magnetic Resonance Imaging (MRI) of Brain
+302,Magnetic Resonance Imaging (MRI) of Spine
+303,"Magnetic Resonance Imaging (MRI) of a Joint (Knee, Shoulder)"
+304,Magnetic Resonance Imaging (MRI) of Abdomen
+305,Magnetic Resonance Cholangiopancreatography (MRCP)
+306,Magnetic Resonance Enterography
+307,Magnetic Resonance Angiography (MRA)
+308,Magnetic Resonance Venography (MRV)
+309,Cardiac MRI
+310,Breast MRI
+311,Prostate MRI
+312,Functional MRI (fMRI)
+313,MRI with and without contrast
+314,Positron Emission Tomography (PET) Scan
+315,PET-CT Scan
+316,PET-MRI Scan
+317,Bone Scan (Nuclear Medicine)
+318,Thyroid Scan and Uptake
+319,HIDA Scan (Hepatobiliary Scan)
+320,V/Q Scan (Lung Ventilation/Perfusion Scan)
+321,MUGA Scan (Multigated acquisition scan)
+322,Gallium Scan
+323,Indium-labeled WBC Scan
+324,Octreotide Scan
+325,MIBG Scan
+326,Renal Scan (Kidney Scan)
+327,Fluoroscopy
+328,Barium Swallow (Esophagram)
+329,Upper GI Series
+330,Small Bowel Follow-Through
+331,Barium Enema
+332,Hysterosalpingography (HSG)
+333,Myelogram
+334,Arthrogram
+335,Angiography (Conventional/Catheter)
+336,Coronary Angiography
+337,Cerebral Angiography
+338,Pulmonary Angiography
+339,Endoscopy (Upper GI Endoscopy/EGD)
+340,Colonoscopy
+341,Sigmoidoscopy
+342,Endoscopic Retrograde Cholangiopancreatography (ERCP)
+343,Bronchoscopy
+344,Cystoscopy
+345,Hysteroscopy
+346,Laryngoscopy
+347,Nasopharyngoscopy
+348,Capsule Endoscopy
+349,Anoscopy
+350,Colposcopy
+351,Electroencephalogram (EEG)
+352,Ambulatory EEG
+353,Video EEG Monitoring
+354,Electromyography (EMG)
+355,Nerve Conduction Study (NCS)
+356,"Evoked Potentials (Visual, Auditory, Somatosensory)"
+357,Sleep Study (Polysomnography)
+358,Audiometry (Hearing Test)
+359,Tympanometry
+360,Videonystagmography (VNG)
+361,Fetal Non-Stress Test (NST)
+362,Contraction Stress Test (CST)
+363,Biophysical Profile (BPP)
+364,Amniocentesis
+365,Chorionic Villus Sampling (CVS)
+366,Cordocentesis
+367,"Skin Biopsy (Shave, Punch, Excisional)"
+368,Wood's Lamp Examination
+369,Tzanck Smear
+370,Fundoscopy
+371,Slit-lamp Examination
+372,Tonometry
+373,Visual Field Testing
+374,Fluorescein Angiography
+375,Optical Coherence Tomography (OCT)
+376,Digital Rectal Exam (DRE)
+377,Ankle-Brachial Index (ABI)
+378,Tilt Table Test
+379,Sweat Test
+380,Hydrogen Breath Test
+381,Urea Breath Test
+382,Esophageal Manometry
+383,Esophageal pH Monitoring
+384,Body Plethysmography
+385,Six-Minute Walk Test
+386,Cardiopulmonary Exercise Test
+387,Right Heart Catheterization
+388,Electrophysiology Study (EPS)
+389,Skin scraping for fungus
+390,Nail clipping for fungus
+391,Hair pull test
+392,Trichogram
+393,Sialometry
+394,Schirmer's Test
+395,Dark Field Microscopy
+396,Polymerase Chain Reaction (PCR) for various pathogens
+397,Western Blot
+398,ELISA (Enzyme-Linked Immunosorbent Assay)
+399,Rapid Influenza Diagnostic Test (RIDT)
+400,Rapid Malaria Antigen Test
+401,Dengue NS1 Antigen
+402,Dengue IgM/IgG Antibody Test
+403,Chikungunya IgM/IgG Antibody Test
+404,Zika Virus Test
+405,Leptospira IgM/IgG Antibody Test
+406,Widal Test for Typhoid Fever
+407,Typhidot Test for Typhoid Fever
+408,ASO (Antistreptolysin O) Titer
+409,Anti-DNase B
+410,Monospot Test
+411,Cold Agglutinin Titer
+412,Mycoplasma pneumoniae Antibodies
+413,Legionella Urinary Antigen
+414,Streptococcus pneumoniae Urinary Antigen
+415,Galactomannan Assay
+416,Beta-D-Glucan Assay
+417,QuantiFERON-TB Gold Test
+418,T-SPOT.TB Test
+419,Fecal Calprotectin
+420,Fecal Elastase
+421,Fecal Fat Stain
+422,Osmotic Gap
+423,Serum Osmolality
+424,Urine Osmolality
+425,Urine Eosinophils
+426,Fractional Excretion of Sodium (FENa)
+427,Anion Gap
+428,Delta Gap
+429,Transferrin
+430,Haptoglobin
+431,Plasminogen
+432,Protein C
+433,Protein S
+434,Antithrombin III
+435,Lupus Anticoagulant
+436,Anti-Cardiolipin Antibodies
+437,Anti-Beta-2 Glycoprotein I Antibodies
+438,Bleeding Time
+439,Platelet Function Assay (PFA-100)
+440,von Willebrand Factor Antigen
+441,Ristocetin Cofactor Activity
+442,"Factor Assays (e.g., Factor VIII, Factor IX)"
+443,Flow Cytometry
+444,FISH (Fluorescence In Situ Hybridization)
+445,Cytogenetic Analysis
+446,Molecular testing for specific mutations
+447,Pharmacogenomic Testing
+448,Whole Exome Sequencing
+449,Whole Genome Sequencing
+450,Maternal Serum Screen (Triple/Quad Screen)
+451,First Trimester Screen
+452,Cell-free DNA (cfDNA) Screening
+453,Newborn Screening Panel
+454,Urine Drug Toxicology Screen
+455,Serum Toxicology Screen
+456,"Volatiles (Ethanol, Methanol, Isopropanol)"
+457,Ethylene Glycol Level
+458,Salicylate Level
+459,Acetaminophen Level
+460,Digoxin Level
+461,Lithium Level
+462,Phenytoin Level
+463,Valproic Acid Level
+464,Carbamazepine Level
+465,Vancomycin Level
+466,Gentamicin/Tobramycin Levels
+467,Cyclosporine/Tacrolimus Levels
+468,Methotrexate Level
+469,Phenobarbital Level
+470,Theophylline Level
+471,"Heavy Metals Panel (Arsenic, Lead, Mercury)"
+472,Cholinesterase Level
+473,Porphyrin Analysis
+474,Delta-Aminolevulinic Acid (ALA)
+475,Porphobilinogen (PBG)
+476,Carotene Level
+477,Vitamin A Level
+478,Vitamin E Level
+479,Vitamin K Level
+480,Vitamin B1 (Thiamine) Level
+481,Vitamin B6 (Pyridoxine) Level
+482,Copper Level
+483,Zinc Level
+484,Selenium Level
+485,Chromium Level
+486,Manganese Level
+487,Iodine Level
+488,Dehydroepiandrosterone Sulfate (DHEA-S)
+489,Androstenedione
+490,17-Hydroxyprogesterone
+491,Sex Hormone-Binding Globulin (SHBG)
+492,Anti-Müllerian Hormone (AMH)
+493,Inhibin A
+494,Inhibin B
+495,Growth Hormone (GH)
+496,GH Stimulation Test
+497,GH Suppression Test
+498,ACTH Stimulation Test
+499,Dexamethasone Suppression Test
+500,CRH Stimulation Test
+501,Catecholamines (Plasma)
+502,Metanephrines (Plasma)
+503,Catecholamines (24-Hour Urine)
+504,Metanephrines (24-Hour Urine)
+505,Vanillylmandelic Acid (VMA) (24-Hour Urine)
+506,5-HIAA (24-Hour Urine)
+507,Gastrin
+508,Vasoactive Intestinal Peptide (VIP)
+509,Glucagon
+510,Somatostatin
+511,Chromogranin A
+512,Serotonin
+513,Histamine
+514,Tryptase
+515,Anti-GAD Antibodies
+516,Islet Cell Antibodies
+517,Insulin Antibodies
+518,Zinc Transporter 8 Antibody
+519,Thyroid-Stimulating Immunoglobulin (TSI)
+520,TSH Receptor Antibodies (TRAb)
+521,Anti-Mitochondrial Antibody (AMA)
+522,Anti-Smooth Muscle Antibody (ASMA)
+523,Liver Kidney Microsomal (LKM-1) Antibody
+524,Anti-Parietal Cell Antibody
+525,Intrinsic Factor Blocking Antibody
+526,Anti-Tissue Transglutaminase (tTG) Antibody
+527,Endomysial Antibody
+528,Deamidated Gliadin Peptide (DGP) Antibody
+529,Anti-Saccharomyces cerevisiae Antibodies (ASCA)
+530,Anti-Glomerular Basement Membrane (GBM) Antibody
+531,"Anti-Neutrophil Cytoplasmic Antibody (c-ANCA, p-ANCA)"
+532,Anti-Phospholipid Antibodies
+533,Anti-CCP Antibody
+534,"Anti-Jo-1, Anti-Mi-2, Anti-SRP (Myositis Panel)"
+535,"Anti-Skin Antibodies (Pemphigus, Pemphigoid)"
+536,Acetylcholine Receptor Antibody
+537,Muscle-Specific Kinase (MuSK) Antibody
+538,Voltage-Gated Calcium Channel (VGCC) Antibody
+539,Paraneoplastic Panel
+540,"Onconeuronal Antibodies (Anti-Hu, Yo, Ri)"
+541,N-Methyl-D-Aspartate (NMDA) Receptor Antibody
+542,Aquaporin-4 (AQP4) Antibody
+543,Myelin Oligodendrocyte Glycoprotein (MOG) Antibody
+544,Ganglioside Antibodies
+545,India Ink Stain for Cryptococcus
+546,KOH Smear for Fungi
+547,Scotch Tape Test for Pinworms
+548,Peripheral Blood Smear
+549,Bone Marrow Smear
+550,Thick and Thin Smear for Malaria
+551,Wright's Stain
+552,Giemsa Stain
+553,Gram Stain
+554,Acid-Fast Stain (Ziehl-Neelsen)
+555,Silver Stain (GMS)
+556,PAS Stain (Periodic acid-Schiff)
+557,Congo Red Stain for Amyloid
+558,Immunohistochemistry
+559,In Situ Hybridization
+560,Electron Microscopy
+561,Cystatin C
+562,Homocysteine
+563,Asymmetric dimethylarginine (ADMA)
+564,Soluble ST2
+565,Galectin-3
+566,Fecal Immunochemical Test (FIT)
+567,Stool DNA Test (Cologuard)
+568,Liquid Biopsy (ctDNA)
+569,Procalcitonin
+570,Presepsin
+571,Interleukin-6 (IL-6)
+572,Tumor Necrosis Factor-alpha (TNF-alpha)
+573,CD4/CD8 Ratio
+574,Natural Killer (NK) Cell Activity
+575,Lymphocyte Proliferation Assay
+576,Neutrophil Function Tests
+577,Phagocytic Assays
+578,Oxidative Burst Assay
+579,Total Hemolytic Complement (CH50)
+580,Alternative Pathway Complement (AH50)
+581,C1 Esterase Inhibitor (Functional and Quantitative)
+582,C1q Binding Assay
+583,Mannose-Binding Lectin (MBL)
+584,Sperm Antibody Test
+585,Post-Coital Test
+586,Ovarian Reserve Testing
+587,Hysterosonogram
+588,Sonohysterography
+589,Endometrial Biopsy
+590,Dilation and Curettage (D&C)
+591,Laparoscopy (Diagnostic)
+592,Mediastinoscopy
+593,Thoracoscopy (VATS)
+594,Arthroscopy
+595,Fetoscopy
+596,Culdocentesis
+597,Schilling Test
+598,Secretin Stimulation Test
+599,D-Xylose Absorption Test
+600,Fecal Chymotrypsin
+601,Sudan Stain for Fecal Fat
+602,72-Hour Fecal Fat Test
+603,"Breath Tests (Lactose, Fructose, Bacterial Overgrowth)"
+604,Gastric Emptying Scan
+605,Gastroesophageal Reflux Scan
+606,Meckel's Scan
+607,Tagged Red Blood Cell Scan
+608,Liver-Spleen Scan
+609,Cisternogram
+610,Shunt Patency Study
+611,Voiding Cystourethrogram (VCUG)
+612,Retrograde Urethrogram
+613,Loopogram
+614,Intravenous Pyelogram (IVP)
+615,Urodynamic Studies
+616,Cystometrogram
+617,Uroflowmetry
+618,Electromyography of Pelvic Floor
+619,Pressure Flow Study
+620,Video Urodynamics
+621,Penile Doppler Ultrasound
+622,Nocturnal Penile Tumescence (NPT)
+623,Vibrotactile Stimulation
+624,Intracavernosal Injection
+625,Falloposcopy
+626,Salpingoscopy
+627,Ophthalmoscopy
+628,Gonioscopy
+629,Keratometry
+630,Pachymetry
+631,Corneal Topography
+632,Electroretinography (ERG)
+633,Electrooculography (EOG)
+634,Visual Evoked Potential (VEP)
+635,Otoscopy
+636,Pneumatic Otoscopy
+637,Acoustic Reflectometry
+638,Auditory Brainstem Response (ABR)
+639,Otoacoustic Emissions (OAE)
+640,Rhinoscopy
+641,Acoustic Rhinometry
+642,Rhinomanometry
+643,Olfactory Testing (Smell Test)
+644,Stroboscopy
+645,Voice Analysis
+646,Electrogastrography (EGG)
+647,Antroduodenal Manometry
+648,Colonic Manometry
+649,Anorectal Manometry
+650,Defecography
+651,Balloon Expulsion Test
+652,Anal Electromyography (EMG)
+653,Pudendal Nerve Terminal Motor Latency
+654,Thermography
+655,Vital Capacity
+656,Forced Expiratory Volume (FEV1)
+657,Forced Vital Capacity (FVC)
+658,FEV1/FVC Ratio
+659,Peak Expiratory Flow (PEF)
+660,Maximum Voluntary Ventilation (MVV)
+661,Nitric Oxide (Exhaled) Measurement
+662,Carbon Monoxide (Exhaled) Measurement
+663,Methacholine Challenge Test
+664,Exercise Challenge Test
+665,Skin Endpoint Titration
+666,Basophil Activation Test
+667,Lymphocyte Transformation Test
+668,Monocyte Activation Test
+669,Cytokine Release Assays
+670,T-cell Receptor Excision Circles (TRECs)
+671,Kappa-deleting Recombination Excision Circles (KRECs)
+672,Chromosome Breakage Analysis
+673,Telomere Length Measurement
+674,Single Fiber EMG
+675,Repetitive Nerve Stimulation
+676,Quantitative Sudomotor Axon Reflex Test (QSART)
+677,Thermoregulatory Sweat Test (TST)
+678,Sympathetic Skin Response (SSR)
+679,Heart Rate Variability (HRV)
+680,Baroreflex Sensitivity
+681,Microneurography
+682,Transcranial Magnetic Stimulation (TMS)
+683,Magnetoencephalography (MEG)
+684,Near-Infrared Spectroscopy (NIRS)
+685,Single-Photon Emission Computed Tomography (SPECT)
+686,SPECT-CT
+687,Dopamine Transporter (DAT) Scan
+688,Amyloid PET Scan
+689,Tau PET Scan
+690,FDG-PET Scan of the Brain
+691,Magnetic Resonance Spectroscopy (MRS)
+692,Diffusion Tensor Imaging (DTI)
+693,Arterial Spin Labeling (ASL)
+694,Blood-Oxygen-Level-Dependent (BOLD) fMRI
+695,Intraoperative MRI
+696,Stereotactic Biopsy
+697,Wada Test
+698,Neuropsychological Testing
+699,Cognitive Assessment
+700,Mini-Mental State Examination (MMSE)
+701,Montreal Cognitive Assessment (MoCA)
+702,Clock Drawing Test
+703,Trail Making Test
+704,Wechsler Adult Intelligence Scale (WAIS)
+705,Wechsler Intelligence Scale for Children (WISC)
+706,Beck Depression Inventory (BDI)
+707,Hamilton Depression Rating Scale (HDRS)
+708,Patient Health Questionnaire (PHQ-9)
+709,Generalized Anxiety Disorder 7-item (GAD-7) scale
+710,Yale-Brown Obsessive Compulsive Scale (Y-BOCS)
+711,Rorschach Test
+712,Thematic Apperception Test (TAT)
+713,Minnesota Multiphasic Personality Inventory (MMPI)
+714,CAGE Questionnaire for Alcoholism
+715,AUDIT (Alcohol Use Disorders Identification Test)
+716,Drug Abuse Screening Test (DAST)
+717,Clinical Opiate Withdrawal Scale (COWS)
+718,Clinical Institute Withdrawal Assessment for Alcohol (CIWA-Ar)
+719,"Pain Assessment Scales (Numeric, Visual Analog)"
+720,Abbey Pain Scale
+721,Braden Scale for Predicting Pressure Sore Risk
+722,Morse Fall Scale
+723,Hendrich II Fall Risk Model
+724,Get-Up and Go Test
+725,Timed Up and Go (TUG) Test
+726,Berg Balance Scale
+727,Functional Reach Test
+728,Activities of Daily Living (ADL) Assessment
+729,Instrumental Activities of Daily Living (IADL) Assessment
+730,FRAIL Scale
+731,Clinical Frailty Scale
+732,Short Physical Performance Battery (SPPB)
+733,Gait Speed Measurement
+734,Handgrip Strength
+735,Chair Stand Test
+736,Nutritional Assessment
+737,Mini Nutritional Assessment (MNA)
+738,Subjective Global Assessment (SGA)
+739,Bioelectrical Impedance Analysis
+740,"Anthropometry (Height, Weight, BMI, Waist Circumference)"
+741,Skinfold Thickness
+742,Indirect Calorimetry
+743,Direct Calorimetry
+744,Doubly Labeled Water Method
+745,Food Frequency Questionnaire
+746,24-Hour Dietary Recall
+747,Food Diary
+748,PillCam
+749,SmartPill
+750,EndoFLIP
+751,High-Resolution Manometry
+752,Impedance-pH Monitoring
+753,Wireless pH Monitoring (Bravo)
+754,FibroScan (Transient Elastography)
+755,Magnetic Resonance Elastography (MRE)
+756,Acoustic Radiation Force Impulse (ARFI) Imaging
+757,Shear Wave Elastography
+758,Contrast-Enhanced Ultrasound (CEUS)
+759,3D/4D Ultrasound
+760,Dual-Energy CT
+761,Photon-Counting CT
+762,7-Tesla MRI
+763,Hyperpolarized MRI
+764,Chemical Exchange Saturation Transfer (CEST) MRI
+765,Optical Coherence Tomography Angiography (OCTA)
+766,Confocal Laser Endomicroscopy
+767,Raman Spectroscopy
+768,Mass Spectrometry Imaging
+769,Flow-Mediated Dilation
+770,Pulse Wave Velocity
+771,Central Blood Pressure
+772,Endothelial Progenitor Cell Count
+773,Circulating Tumor Cell (CTC) Count

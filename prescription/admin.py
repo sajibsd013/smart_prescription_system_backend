@@ -1,41 +1,8 @@
 from django.contrib import admin
 from .models import (
     Complaint, History, Examination, Diagnosis, Investigation,
-    Advice, FollowUp, Medication, Prescription, PrescriptionVersionHistory
+    Advice, FollowUp, Prescription, PrescriptionVersionHistory
 )
-
-# Inline classes for showing ManyToMany relationships in Prescription admin
-class MedicationInline(admin.TabularInline):
-    model = Prescription.medication.through
-    extra = 0
-
-class ComplaintInline(admin.TabularInline):
-    model = Prescription.complaint.through
-    extra = 0
-
-class HistoryInline(admin.TabularInline):
-    model = Prescription.history.through
-    extra = 0
-
-class ExaminationInline(admin.TabularInline):
-    model = Prescription.exam.through
-    extra = 0
-
-class DiagnosisInline(admin.TabularInline):
-    model = Prescription.diagnosis.through
-    extra = 0
-
-class InvestigationInline(admin.TabularInline):
-    model = Prescription.investigations.through
-    extra = 0
-
-class AdviceInline(admin.TabularInline):
-    model = Prescription.advice.through
-    extra = 0
-
-class FollowUpInline(admin.TabularInline):
-    model = Prescription.follow_up.through
-    extra = 0
 
 @admin.register(Prescription)
 class PrescriptionAdmin(admin.ModelAdmin):
@@ -44,32 +11,8 @@ class PrescriptionAdmin(admin.ModelAdmin):
     search_fields = ('patient__user__name', 'doctor__user__name')
     readonly_fields = ('created_at', 'modified_at')
 
-    inlines = [
-        MedicationInline,
-        ComplaintInline,
-        HistoryInline,
-        ExaminationInline,
-        DiagnosisInline,
-        InvestigationInline,
-        AdviceInline,
-        FollowUpInline
-    ]
-
-    fieldsets = (
-        ('Patient & Doctor Info', {
-            'fields': ('patient', 'doctor')
-        }),
-        # ('Clinical Sections', {
-        #     'fields': ('complaint', 'history', 'exam', 'diagnosis', 'investigations', 'advice', 'follow_up')
-        # }),
-        ('Status & Timestamps', {
-            'fields': ('status', 'created_at', 'modified_at')
-        }),
-    )
-
     def prescription_label(self, obj):
         return f"Rx #{obj.id}"
-
     prescription_label.short_description = 'Prescription ID'
 
 # Register clinical section models with default admin
@@ -100,12 +43,6 @@ class AdviceAdmin(admin.ModelAdmin):
 @admin.register(FollowUp)
 class FollowUpAdmin(admin.ModelAdmin):
     search_fields = ('text',)
-
-@admin.register(Medication)
-class MedicationAdmin(admin.ModelAdmin):
-    list_display = ('brand_name', 'generic_name', 'strength', 'dosage', 'duration')
-    search_fields = ('brand_name', 'generic_name')
-    list_filter = ('generic_name',)
 
 
 @admin.register(PrescriptionVersionHistory)

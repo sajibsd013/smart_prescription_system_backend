@@ -66,31 +66,20 @@ class FollowUp(models.Model):
     def __str__(self):
         return self.text
 
-class Medication(models.Model):
-    brand_name = models.CharField(max_length=100)
-    generic_name = models.CharField(max_length=100)
-    type = models.CharField(max_length=20, default='tablet')
-    strength = models.CharField(max_length=50)
-    dosage = models.CharField(max_length=100)
-    duration = models.CharField(max_length=50, blank=True, null=True)
-
-    def __str__(self):
-        return f"{self.brand_name} ({self.dosage})"
 
 class Prescription(models.Model):
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='prescriptions')
     doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE, related_name='prescriptions')
 
-    # Many-to-Many Fields (each prescription can have multiple items)
-    complaint = models.ManyToManyField(Complaint, blank=True, related_name='prescriptions')
-    history = models.ManyToManyField(History, blank=True, related_name='prescriptions')
-    exam = models.ManyToManyField(Examination, blank=True, related_name='prescriptions')
-    diagnosis = models.ManyToManyField(Diagnosis, blank=True, related_name='prescriptions')
-    investigations = models.ManyToManyField(Investigation, blank=True, related_name='prescriptions')
-    advice = models.ManyToManyField(Advice, blank=True, related_name='prescriptions')
-    follow_up = models.ManyToManyField(FollowUp, blank=True, related_name='prescriptions')
-    medication = models.ManyToManyField(Medication, related_name='prescriptions')
-
+    # JSON fields (each prescription can have multiple items)
+    complaint = models.JSONField(default=list, blank=True)
+    history = models.JSONField(default=list, blank=True)
+    exam = models.JSONField(default=list, blank=True)
+    diagnosis = models.JSONField(default=list, blank=True)
+    investigations = models.JSONField(default=list, blank=True)
+    advice = models.JSONField(default=list, blank=True)
+    follow_up = models.JSONField(default=list, blank=True)
+    medication = models.JSONField(default=list, blank=True)
 
     status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='active')
     created_at = models.DateTimeField(auto_now_add=True)
@@ -98,7 +87,6 @@ class Prescription(models.Model):
 
     def __str__(self):
         return f"Rx #{self.id} - {self.patient} by {self.doctor}"
-
 
 
 
