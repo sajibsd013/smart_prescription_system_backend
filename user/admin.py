@@ -21,7 +21,7 @@ class UserAdmin(admin.ModelAdmin):
 class DoctorAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'degree', 'reg_no', 'specialty', 'designation', 'hospital_name', 'created_at')
     search_fields = ('user__name', 'reg_no', 'specialty', 'degree', 'hospital_name')
-    list_filter = ('specialty', 'hospital_name', 'created_at')
+    list_filter = ('specialty', 'hospital_name',)
     readonly_fields = ('created_at', 'modified_at')
     ordering = ('-created_at',)
 

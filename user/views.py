@@ -1,16 +1,26 @@
 
 from django.contrib.auth import get_user_model
 from rest_framework import generics, status
-from .serializers import RegisterSerializer, LoginSerializer, UserSerializer, UserManagementSerializer
+from .serializers import RegisterSerializer, LoginSerializer, UserSerializer, UserManagementSerializer, DoctorSerializer, PatientSerializer
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from django.core.cache import cache
 from .healper import sent_email_to_user, verify_otp, sent_otp
 from rest_framework_simplejwt.views import TokenObtainPairView
 from rest_framework_simplejwt.tokens import RefreshToken
-from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework_simplejwt.tokens import AccessToken
 import datetime
+from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticated, IsAdminUser, AllowAny, SAFE_METHODS
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.filters import OrderingFilter, SearchFilter
+from .models import User, Doctor, Patient
+from django.views.decorators.cache import cache_page
+from django.views.decorators.vary import vary_on_cookie
+from django.utils.decorators import method_decorator
+
+from smart_prescription_system_backend.permissions import IsDoctorUserOrAdmin
+
 User = get_user_model()
 
 # Create your views here.
@@ -180,6 +190,48 @@ class UserManagementView(APIView):
           return Response(status=status.HTTP_204_NO_CONTENT)
       except User.DoesNotExist:
           return Response({"message": "User not found"}, status=status.HTTP_404_NOT_FOUND)
+
+
+# Doctor Views
+
+class DoctorViewSet(viewsets.ModelViewSet):
+    queryset = Doctor.objects.all().order_by('-created_at')
+    serializer_class = DoctorSerializer
+
+    filter_backends = [DjangoFilterBackend, OrderingFilter, SearchFilter]
+    filterset_fields = [
+        'specialty', 'hospital_name',
+    ]
+
+    search_fields = [
+        'user__name', 'reg_no', 'specialty', 'degree', 'hospital_name'
+    ]
+
+    def get_permissions(self):
+        if self.request.method in SAFE_METHODS:
+            return [AllowAny()]
+        elif self.request.method in ['POST',]:
+            return [IsAuthenticated()]
+        elif self.request.method in ['PUT', 'PATCH', 'DELETE']:
+            return [IsDoctorUserOrAdmin()]
+        return [IsAdminUser()]
+
+    def perform_create(self, serializer):
+        serializer.save(user=self.request.user)
+
+    def perform_update(self, serializer):
+        serializer.save()
+
+
+    # @method_decorator(cache_page(60 * 30 * 1))  # 30 minutes
+    # @method_decorator(vary_on_cookie)
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+    # @method_decorator(cache_page(60 * 5 * 1))  # 5 minutes
+    # @method_decorator(vary_on_cookie)
+    def retrieve(self, request, *args, **kwargs):
+        return super().retrieve(request, *args, **kwargs)
 
 
 

@@ -48,7 +48,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 
 class Doctor(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='doctor_profile')
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='doctor_profile')
     reg_no = models.CharField(max_length=50, unique=True, help_text="Doctor's official registration number")
     degree = models.CharField(max_length=100, blank=True, null=True, help_text="Educational degree(s), e.g., MBBS, FCPS")
     specialty = models.CharField(max_length=100, help_text="Doctor's area of specialization")

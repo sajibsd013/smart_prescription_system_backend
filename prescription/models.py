@@ -68,8 +68,8 @@ class FollowUp(models.Model):
 
 
 class Prescription(models.Model):
-    patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='prescriptions')
-    doctor = models.ForeignKey(Doctor, on_delete=models.CASCADE, related_name='prescriptions')
+    patient = models.ForeignKey(Patient, on_delete=models.SET_NULL, related_name='prescriptions',  null=True,)
+    doctor = models.ForeignKey(Doctor, on_delete=models.SET_NULL, related_name='prescriptions',  null=True,)
 
     # JSON fields (each prescription can have multiple items)
     complaint = models.JSONField(default=list, blank=True)
