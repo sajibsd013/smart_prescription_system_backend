@@ -58,6 +58,7 @@ EMAIL_PORT=587
 FRONTEND_HOSTNAME=http://localhost:3000
 ```
 
+
 ##### Step 7 – Run the project:
 
 ```sh
