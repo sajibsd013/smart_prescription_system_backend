@@ -46,6 +46,7 @@ cp .env.example .env
 
 *(On Windows Command Prompt, you can use `copy .env.example .env` instead.)*
 Make sure to set the following variables in your `.env` file:
+
 ```
 DEBUG=1
 ALLOWED_HOSTS=*
@@ -71,4 +72,3 @@ Success! You can now access the project at `http://localhost:8000`.
 You can find the Postman API documentation for this project at the following link:
 [Smart Prescription System Backend API Documentation](https://documenter.getpostman.com/view/21096810/2sB3QMKULj)
 
----
